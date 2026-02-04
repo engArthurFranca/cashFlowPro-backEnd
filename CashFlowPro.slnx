@@ -1,2 +1,6 @@
 <Solution>
+  <Project Path="CashFlowPro.API/CashFlowPro.API.csproj" />
+  <Project Path="CashFlowPro.Application/CashFlowPro.Application.csproj" />
+  <Project Path="CashFlowPro.Domain/CashFlowPro.Domain.csproj" />
+  <Project Path="CashFlowPro.InfraStructure/CashFlowPro.InfraStructure.csproj" />
 </Solution>
