@@ -36,6 +36,42 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "CashFlowPro.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "CashFlowPro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CashFlowPro.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CashFlowPro.Application.dll": {}
+        }
+      },
+      "CashFlowPro.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/CashFlowPro.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CashFlowPro.Domain.dll": {}
+        }
+      },
+      "CashFlowPro.InfraStructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "CashFlowPro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CashFlowPro.InfraStructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CashFlowPro.InfraStructure.dll": {}
+        }
       }
     }
   },
@@ -75,10 +111,27 @@
         "microsoft.openapi.2.0.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "CashFlowPro.Application/1.0.0": {
+      "type": "project",
+      "path": "../CashFlowPro.Application/CashFlowPro.Application.csproj",
+      "msbuildProject": "../CashFlowPro.Application/CashFlowPro.Application.csproj"
+    },
+    "CashFlowPro.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CashFlowPro.Domain/CashFlowPro.Domain.csproj",
+      "msbuildProject": "../CashFlowPro.Domain/CashFlowPro.Domain.csproj"
+    },
+    "CashFlowPro.InfraStructure/1.0.0": {
+      "type": "project",
+      "path": "../CashFlowPro.InfraStructure/CashFlowPro.InfraStructure.csproj",
+      "msbuildProject": "../CashFlowPro.InfraStructure/CashFlowPro.InfraStructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "CashFlowPro.Application >= 1.0.0",
+      "CashFlowPro.InfraStructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.2"
     ]
   },
@@ -106,7 +159,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ÁreaDeTrabalho\\DEV\\GIT\\cashFlowPro-backEnd\\CashFlowPro.Application\\CashFlowPro.Application.csproj": {
+              "projectPath": "D:\\ÁreaDeTrabalho\\DEV\\GIT\\cashFlowPro-backEnd\\CashFlowPro.Application\\CashFlowPro.Application.csproj"
+            },
+            "D:\\ÁreaDeTrabalho\\DEV\\GIT\\cashFlowPro-backEnd\\CashFlowPro.InfraStructure\\CashFlowPro.InfraStructure.csproj": {
+              "projectPath": "D:\\ÁreaDeTrabalho\\DEV\\GIT\\cashFlowPro-backEnd\\CashFlowPro.InfraStructure\\CashFlowPro.InfraStructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
