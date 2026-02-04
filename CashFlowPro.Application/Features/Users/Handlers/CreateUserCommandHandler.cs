@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using CashFlowPro.Application.Features.Users.Commands;
+using CashFlowPro.Application.Common.Interfaces;
 
 namespace CashFlowPro.Application.Features.Users.Handlers;
 
