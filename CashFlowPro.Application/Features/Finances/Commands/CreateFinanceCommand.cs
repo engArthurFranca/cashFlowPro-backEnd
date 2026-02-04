@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿namespace CashFlowPro.Application.Features.Finances.Commands;
+
+using MediatR;
 using CashFlowPro.Domain.Entities;
 
 public record CreateFinanceCommand(
@@ -10,5 +12,6 @@ public record CreateFinanceCommand(
   int NIstallments,
   bool Recurring,
   FinanceType FinanceType,
-  int TagId
+  int TagId,
+  int UserId
 ) : IRequest<int>;

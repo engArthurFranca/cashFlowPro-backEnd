@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿namespace CashFlowPro.Application.Features.Users.Commands;
+
+using MediatR;
 
 public record CreateUserCommand(
   string UserName,

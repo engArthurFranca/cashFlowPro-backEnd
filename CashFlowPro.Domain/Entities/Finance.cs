@@ -1,5 +1,4 @@
-﻿namespace CashFlowPro.Domain.Entities
-{
+﻿namespace CashFlowPro.Domain.Entities;
 
   public class User
   {
@@ -54,4 +53,3 @@
     public int UserId { get; set; }
     public User? User { get; set; }
   }
-}
