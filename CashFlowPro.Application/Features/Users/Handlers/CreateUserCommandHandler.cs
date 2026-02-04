@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using CashFlowPro.Application.Features.Users.Commands;
 using CashFlowPro.Application.Common.Interfaces;
+using CashFlowPro.Domain.Entities;
 
 namespace CashFlowPro.Application.Features.Users.Handlers;
 
@@ -13,7 +14,7 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
 
   public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
   {
-    var user = new Domain.Entities.User
+    var user = new User
     {
       Username = request.UserName,
       Email = request.Email,
